@@ -14,8 +14,5 @@
   "dependencies": {
     "sass": "^1.54.3",
     "vanilla-framework": "^3.6.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.19"
   }
 }
