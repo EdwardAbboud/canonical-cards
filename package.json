@@ -1,0 +1,21 @@
+{
+  "name": "cards-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass -w --load-path=node_modules src:dist --style=compressed",
+    "watch-css": "yarn build-css && sass --load-path=node_modules -w src:dist --style=compressed"
+  },
+  "author": "Edward Abboud",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.3",
+    "vanilla-framework": "^3.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

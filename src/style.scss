@@ -1,0 +1,37 @@
+@import "vanilla-framework";
+@include vanilla;
+@include vf-base;
+@include vf-p-card;
+@include vf-u-align;
+@include vf-u-equal-height;
+
+.highlight-bar {
+  @include vf-highlight-bar(#a87ca0);
+}
+
+@mixin root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+@mixin more-shadow {
+  box-shadow: 1px 1px 10px 1px rgb(55, 55, 55, 0.2);
+}
+
+@mixin smaller-padding {
+  padding-top: 9px;
+}
+
+.box-shadow {
+  @include more-shadow();
+}
+
+.root-style {
+  @include root();
+}
+
+.top-padding {
+  @include smaller-padding();
+}
