@@ -19,13 +19,17 @@ async function injectHTML() {
 
   const APIdata = await fetchData();
 
+  // topic, image, link, title, author, date, type
+
   for (let i = 0; i < APIdata.length; i++) {
     const fullDate = dateFormat(APIdata[i].date);
 
     let card = createCard(
+      APIdata[i]._embedded["wp:term"][1][0].name.toUpperCase(),
       APIdata[i].featured_media,
       APIdata[i].link,
       APIdata[i].title.rendered,
+      APIdata[i]._embedded.author[0].link,
       APIdata[i]._embedded.author[0].name,
       fullDate,
       APIdata[i].type
