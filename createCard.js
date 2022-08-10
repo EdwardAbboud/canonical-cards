@@ -12,18 +12,18 @@ const createCard = (
   const card = document.createElement("div");
   card.innerHTML = `
     <div class="row ">
-        <div class="col-4 " style="width: 310px;">
+        <div class="col-4 " style="width: 360px">
           <div class="p-card--highlighted box-shadow highlight-bar u-no-padding">
             <div class="p-card__inner top-padding u-no-padding--bottom ">
-              <h5 class="p-card__inner u-no-padding--left u-no-padding--bottom">${topic}</h5>
+              <h5 class="p-card__inner u-no-padding--left u-no-padding--bottom p-text--x-small-capitalised">${topic}</h5>
             </div>
-            <div class="p-card__inner ">
+            <div class="p-card__inner u-no-padding--top">
               <hr class="u-no-margin--bottom"/>
             </div>
             <div class="p-card__inner u-no-padding--bottom u-no-padding--top">
               <a href="${link}"><img class="p-card__image" src=${image}  /></a>
             </div>
-            <div class="p-card__inner u-no-padding--top u-no-padding--bottom" style="height: 120px; overflow: hidden;">
+            <div class="p-card__inner u-no-padding--top u-no-padding--bottom" style="height: 130px; overflow: hidden;">
               <a href="${link}"><h3 class="p-heading--4" style="font-weight: 300">${title}</h3></a>
             </div>
             <div class="p-card__inner p-heading--6 u-no-padding--top u-no-padding--bottom">

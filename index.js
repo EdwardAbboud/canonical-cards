@@ -25,7 +25,7 @@ async function injectHTML() {
     const fullDate = dateFormat(APIdata[i].date);
 
     let card = createCard(
-      APIdata[i]._embedded["wp:term"][1][0].name.toUpperCase(),
+      APIdata[i]._embedded["wp:term"][1][0].name,
       APIdata[i].featured_media,
       APIdata[i].link,
       APIdata[i].title.rendered,
